@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-var policyRouter = require('./routes/policyRouter');
+const policyRouter = require('./routes/policyRouter');
 
 // parse HTTP requests with content-type = application/jason
 app.use(bodyParser.json());
