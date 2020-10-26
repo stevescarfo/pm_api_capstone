@@ -1,0 +1,7 @@
+GET http://localhost:8080 HTTP/1.1
+Content-Type: applicaiton/json
+
+#####
+
+GET http://localhost:8080/api/policies HTTP/1.1
+Content-Type: applicaiton/json
