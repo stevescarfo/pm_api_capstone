@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
+var policy_controller = require('../controllers/policyController');
+
+
 
 router.get('/', function (req, res) {
   res.send('Policy home page');
 });
 
-router.post('/', function (req, res) {
-  res.json({ message: "Add a Policy", requestBody: req.body});
-});
+router.post('/', policy_controller.policy_create_post);
+
 
 module.exports = router;

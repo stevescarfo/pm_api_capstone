@@ -12,5 +12,13 @@ POST http://localhost:8080/api/policies HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "New Policy"
+  "name": "Silver Auto Policy",
+  "type": "Auto",
+  "holder_first_name": "Freddy",
+  "holder_last_name": "Kreuger",
+  "holder_account_id": "666",
+  "is_active": true,
+  "has_active_claim": false,
+  "effective_date": "2020-01-01",
+  "termination_date": "2020-12-31"
 }
