@@ -1,6 +1,8 @@
 const express = require('express');
+
+const policy_controller = require('../controllers/policyController');
+
 const router = express.Router();
-var policy_controller = require('../controllers/policyController');
 
 
 
