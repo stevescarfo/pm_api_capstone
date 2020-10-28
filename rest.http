@@ -8,11 +8,38 @@ Content-Type: application/json
 
 #####
 
+GET http://localhost:8080/api/policies/5f9880491f63f7a6dc8799fe HTTP/1.1
+Content-Type: application/json
+
+#####
+
+
+DELETE http://localhost:8080/api/policies/5f98826c05aef1bde41b5df1 HTTP/1.1
+Content-Type: application/json
+
+#####
+
+DELETE http://localhost:8080/api/policies HTTP/1.1
+Content-Type: application/json
+
+#####
+
+
+PUT http://localhost:8080/api/policies/5f9880491f63f7a6dc8799fe HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Cell Phone Policy",
+  "holder_last_name": "Baggins"
+}
+
+#####
+
 POST http://localhost:8080/api/policies HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Silver Auto Policy",
+  "name": "Silver Policy",
   "type": "Auto",
   "holder_first_name": "Freddy",
   "holder_last_name": "Kreuger",
