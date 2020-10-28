@@ -42,7 +42,7 @@ Content-Type: application/json
   "name": "Silver Policy",
   "type": "Auto",
   "holder_first_name": "Freddy",
-  "holder_last_name": "Kreuger",
+  "holder_last_name": "Kreuger1",
   "holder_account_id": "666",
   "is_active": true,
   "has_active_claim": false,

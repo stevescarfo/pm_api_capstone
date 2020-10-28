@@ -88,7 +88,13 @@ exports.policy_deleteById = (req, res) => {
 exports.policy_list_delete = function (req, res) {
   Policy.deleteMany()
     .then(data => {
-      res.status(200).json("Successfully deleted All Policies");
+      const count = data.deletedCount;
+      if (count > 0){
+      res.status(200).json(count + ' policies deleted');
+      }
+      else { 
+        res.status(400).send('No Policies to Delete.');
+      };
     })
     .catch(err => {
       res.status(400).send('No Policies to Delete.');
